@@ -1,23 +1,76 @@
-Para que se muestre tu página web en lugar del README cuando despliegues el sitio en GitHub Pages, necesitas hacer estos cambios:
+# Amigo Secreto (Secret Friend Draw)
 
-1. Asegúrate de que tu archivo HTML principal se llame `index.html` (es muy importante que sea este nombre exactamente)
+## Descripción
+Aplicación web que permite organizar sorteos de amigo secreto de manera simple y aleatoria. Ideal para eventos, fiestas y actividades grupales donde se necesite realizar un sorteo entre participantes.
 
-2. El archivo `index.html` debe estar en la raíz del repositorio (no dentro de carpetas)
+## Tecnologías Utilizadas
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Fuentes de Google Fonts
+- Diseño Responsivo
 
-3. En la configuración de GitHub Pages:
-   - Ve a Settings (Configuración) del repositorio
-   - Busca la sección "Pages" en el menú lateral
-   - En "Source", selecciona la rama (branch) que quieres desplegar
-   - Guarda los cambios
+## Requisitos del Sistema
+- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- Conexión a Internet (solo para cargar fuentes)
 
-4. Si aún así muestra el README, puedes:
-   - Mover el README.md a una carpeta docs/
-   - O renombrar el README.md a otro nombre
-   - O asegurarte de que index.html está en la raíz y el README en una subcarpeta
+## Funcionalidades
+- Agregar participantes a la lista
+- Visualización en tiempo real de participantes agregados
+- Sorteo aleatorio entre los participantes
+- Sistema de validación de entradas
 
-La prioridad de GitHub Pages para mostrar archivos es:
-1. index.html
-2. index.md
-3. README.md
+## Cómo Usar la Aplicación
 
-Si tienes un archivo index.html correctamente ubicado en la raíz, GitHub Pages lo mostrará en lugar del README.
+### Instalación
+1. Descargar todos los archivos del proyecto
+2. Mantener la estructura de carpetas proporcionada
+3. No modificar los nombres de los archivos
+
+### Uso
+1. Abrir el archivo `index.html` en un navegador web
+2. En el campo de texto, escribir el nombre del participante
+3. Presionar el botón "Añadir" o la tecla Enter
+4. Repetir el proceso para cada participante
+5. Una vez agregados todos los participantes, presionar "Sortear amigo"
+6. El sistema mostrará el resultado del sorteo
+
+### Validaciones y Restricciones
+- No se permiten nombres vacíos
+- Se requiere al menos un participante para realizar el sorteo
+- Los nombres se muestran en el orden que fueron agregados
+- No hay límite de participantes
+
+## Estructura de Archivos
+```
+amigo-secreto/
+│
+├── index.html
+├── style.css
+├── app.js
+└── assets/
+    ├── amigo-secreto.png
+    └── play_circle_outline.png
+```
+
+## Personalización
+El proyecto puede ser personalizado modificando:
+- Estilos en el archivo CSS
+- Imágenes en la carpeta assets
+- Textos en el HTML
+- Lógica del sorteo en JavaScript
+
+## Contribución
+Si deseas contribuir al proyecto:
+1. Hacer un fork del repositorio
+2. Crear una rama para tu feature
+3. Hacer commit de tus cambios
+4. Crear un pull request
+
+## Soporte
+- Reportar bugs a través de issues
+- Sugerir mejoras mediante pull requests
+- Consultar la documentación adjunta
+
+## Licencia
+Este proyecto está bajo licencia MIT. Ver el archivo LICENSE para más detalles.
